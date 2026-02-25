@@ -3,11 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <title>Heart Demo</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;          /* Centrar todo horizontal y vertical */
+    flex-direction: column; /* Apilar texto e imagen */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;      /* Ocupa toda la pantalla */
+    background-color: #f0f0f0;
+  }
+  p {
+    font-size: 50px;        /* Texto grande */
+    margin: 0 0 20px 0;     /* Espacio abajo del texto */
+  }
+  img {
+    width: 100px;           /* Tamaño del corazón */
+    height: auto;
+  }
+</style>
 </head>
 <body>
-<p style="font-size:40px;">
-Some arbitrary large-font text
+
+<p>Some arbitrary large-font text</p>
 <img src="heart.png" alt="Heart icon">
-</p>
+
 </body>
 </html>
