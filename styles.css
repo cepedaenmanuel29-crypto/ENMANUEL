@@ -1,0 +1,60 @@
+/* External CSS */
+
+body {
+font-family: Arial;
+margin: 0;
+background: linear-gradient(to right, #dbeafe, #ffffff);
+}
+
+header {
+background: #333;
+color: white;
+padding: 15px;
+text-align: center;
+}
+
+nav ul {
+display: flex;
+list-style: none;
+background: #444;
+padding: 10px;
+}
+
+nav ul li {
+margin-right: 15px;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+}
+
+/* pseudo class */
+nav ul li a:hover {
+color: yellow;
+}
+
+main {
+display: grid;
+grid-template-columns: 2fr 1fr;
+gap: 20px;
+padding: 20px;
+}
+
+img {
+width: 100%;
+border-radius: 10px;
+transition: transform 0.5s;
+}
+
+/* animation */
+img:hover {
+transform: scale(1.05);
+}
+
+/* responsive */
+@media (max-width: 600px) {
+main {
+grid-template-columns: 1fr;
+}
+}
