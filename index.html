@@ -3,30 +3,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mount Everest | Explore</title>
+<title>Mount Everest</title>
 
 <link rel="stylesheet" href="css/styles.css">
 
 <style>
-/* Internal CSS */
-.hero-text {
-    text-align: center;
-    color: white;
-}
+.hero-text { text-align:center; color:white; }
 </style>
-
 </head>
 
 <body>
 
 <header class="hero">
-
 <div class="hero-text">
 <h1>Mount Everest</h1>
 <p>The Roof of the World</p>
-<button onclick="scrollToSection()">Explore More</button>
+<button onclick="scrollToSection()">Explore</button>
 </div>
-
 </header>
 
 <nav>
@@ -35,59 +28,50 @@
 <li><a href="history.html">History</a></li>
 <li><a href="facts.html">Facts</a></li>
 <li><a href="climbing.html">Climbing</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li><a href="gallery.html">Gallery</a></li>
 </ul>
 </nav>
 
 <main id="mainContent">
 
 <section>
-
-<h2>About Mount Everest</h2>
+<h2>Discover Everest</h2>
 
 <p>
-Mount Everest is the highest mountain on Earth, standing at 8,848 meters above sea level.
-It is located in the Himalayas between Nepal and Tibet and attracts climbers from all over the world.
+Mount Everest stands at 8,848 meters above sea level, making it the highest mountain on Earth.
+Located in the Himalayas, it forms a natural border between Nepal and Tibet.
+Everest is known not only for its height but for its extreme weather, powerful winds,
+and the dangerous “death zone” where oxygen levels are critically low.
+</p>
+
+<p>
+Every year, hundreds of climbers attempt to reach its summit, facing avalanches,
+freezing temperatures, and unpredictable storms. Despite these dangers, Everest
+remains one of the most iconic and desired destinations for adventurers worldwide.
 </p>
 
 <figure>
 <img src="images/everest1.jpg" alt="Mount Everest landscape">
-<figcaption>Beautiful view of Mount Everest</figcaption>
+<figcaption>Mount Everest towering above the Himalayas</figcaption>
 </figure>
 
 </section>
 
 <section>
-
-<h2>Why Everest is Famous</h2>
-
-<ul>
-<li>Highest mountain in the world</li>
-<li>Extreme weather conditions</li>
-<li>Famous climbing challenges</li>
-</ul>
-
-</section>
-
-<section>
-
-<h2>Listen to Everest Atmosphere</h2>
-
-<button onclick="playAudio()">Play Sound</button>
+<h2>Experience the Atmosphere</h2>
+<button onclick="playAudio()">Play Mountain Wind</button>
 
 <audio id="audio">
 <source src="audio/everest.mp3" type="audio/mpeg">
 </audio>
-
 </section>
 
 </main>
 
 <footer>
-<p>&copy; 2026 Everest Exploration</p>
+<p>Everest Exploration Project</p>
 </footer>
 
 <script src="js/script.js"></script>
-
 </body>
 </html>
