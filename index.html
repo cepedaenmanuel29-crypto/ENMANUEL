@@ -3,21 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mount Everest | Home</title>
+<title>Mount Everest | Explore</title>
 
 <link rel="stylesheet" href="css/styles.css">
 
 <style>
 /* Internal CSS */
-h1 { text-align: center; }
+.hero-text {
+    text-align: center;
+    color: white;
+}
 </style>
+
 </head>
 
 <body>
 
-<header>
+<header class="hero">
+
+<div class="hero-text">
 <h1>Mount Everest</h1>
-<p>The Highest Mountain in the World</p>
+<p>The Roof of the World</p>
+<button onclick="scrollToSection()">Explore More</button>
+</div>
+
 </header>
 
 <nav>
@@ -30,19 +39,41 @@ h1 { text-align: center; }
 </ul>
 </nav>
 
-<main>
+<main id="mainContent">
 
 <section>
-<h2>About Everest</h2>
 
-<p><strong>Mount Everest</strong> is the tallest mountain on Earth, located between Nepal and Tibet.</p>
+<h2>About Mount Everest</h2>
+
+<p>
+Mount Everest is the highest mountain on Earth, standing at 8,848 meters above sea level.
+It is located in the Himalayas between Nepal and Tibet and attracts climbers from all over the world.
+</p>
 
 <figure>
-<img src="images/everest.jpg" alt="Snowy Mount Everest peak">
-<figcaption>Mount Everest Summit</figcaption>
+<img src="images/everest1.jpg" alt="Mount Everest landscape">
+<figcaption>Beautiful view of Mount Everest</figcaption>
 </figure>
 
-<button onclick="playAudio()">Hear Mountain Wind</button>
+</section>
+
+<section>
+
+<h2>Why Everest is Famous</h2>
+
+<ul>
+<li>Highest mountain in the world</li>
+<li>Extreme weather conditions</li>
+<li>Famous climbing challenges</li>
+</ul>
+
+</section>
+
+<section>
+
+<h2>Listen to Everest Atmosphere</h2>
+
+<button onclick="playAudio()">Play Sound</button>
 
 <audio id="audio">
 <source src="audio/everest.mp3" type="audio/mpeg">
@@ -50,24 +81,13 @@ h1 { text-align: center; }
 
 </section>
 
-<aside>
-<h3>Quick Facts</h3>
-<ul>
-<li>Height: 8,848 meters</li>
-<li>First climb: 1953</li>
-<li>Location: Nepal/Tibet</li>
-</ul>
-</aside>
-
 </main>
 
 <footer>
-<p>&copy; 2026 Everest Project</p>
+<p>&copy; 2026 Everest Exploration</p>
 </footer>
 
 <script src="js/script.js"></script>
-
-<noscript>Your browser does not support JavaScript</noscript>
 
 </body>
 </html>
