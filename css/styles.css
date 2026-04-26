@@ -1,89 +1,85 @@
-/* GENERAL */
 body {
-margin: 0;
-font-family: 'Segoe UI', sans-serif;
-background: #f5f7fa;
+margin:0;
+font-family:'Segoe UI';
+background: linear-gradient(to right, #e0f7fa, #ffffff);
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
-height: 90vh;
-background: url('../images/everest1.jpg') center/cover no-repeat;
-display: flex;
-align-items: center;
-justify-content: center;
+height:90vh;
+background:url('../images/everest1.jpg') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
 }
 
-/* NAVIGATION */
+/* HEADER SMALL */
+.small-header {
+background:#0d47a1;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+/* NAV */
 nav ul {
-display: flex;
-justify-content: center;
-list-style: none;
-background: #111;
-padding: 15px;
-margin: 0;
+display:flex;
+justify-content:center;
+list-style:none;
+background:#000;
+padding:15px;
 }
 
-nav ul li {
-margin: 0 15px;
+nav a {
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
 }
 
-nav ul li a {
-color: white;
-text-decoration: none;
-font-weight: bold;
+nav a:hover {
+color:#00e5ff;
 }
 
-/* HOVER EFFECT */
-nav ul li a:hover {
-color: #00bcd4;
-}
-
-/* MAIN CONTENT */
+/* MAIN */
 main {
-padding: 40px;
-display: grid;
-grid-template-columns: 1fr;
-gap: 40px;
+padding:40px;
 }
 
-/* IMAGE STYLE */
+/* IMAGES */
 img {
-width: 100%;
-border-radius: 12px;
-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-transition: transform 0.3s;
+width:100%;
+border-radius:10px;
+margin-top:15px;
+transition:0.3s;
 }
 
 img:hover {
-transform: scale(1.03);
+transform:scale(1.05);
+}
+
+/* GALLERY */
+.gallery {
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
 }
 
 /* BUTTON */
 button {
-padding: 10px 20px;
-background: #00bcd4;
-border: none;
-color: white;
-cursor: pointer;
-border-radius: 5px;
+background:#00bcd4;
+color:white;
+padding:10px;
+border:none;
+border-radius:5px;
+cursor:pointer;
 }
 
 button:hover {
-background: #0097a7;
-}
-
-/* FOOTER */
-footer {
-background: #111;
-color: white;
-text-align: center;
-padding: 15px;
+background:#0097a7;
 }
 
 /* RESPONSIVE */
-@media (max-width: 600px) {
-.hero {
-height: 60vh;
-}
+@media(max-width:600px){
+.gallery { grid-template-columns:1fr; }
 }
