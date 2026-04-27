@@ -85,3 +85,24 @@ text-align:center;
 padding:20px;
 background:black;
 }
+.gallery-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 30px;
+align-items: center;
+}
+
+.gallery-content.reverse img {
+order: 2;
+}
+
+.gallery-content img {
+max-width: 400px;
+width: 100%;
+}
+
+@media (max-width: 768px) {
+.gallery-content {
+grid-template-columns: 1fr;
+}
+}
