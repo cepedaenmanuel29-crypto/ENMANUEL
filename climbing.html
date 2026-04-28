@@ -1,16 +1,63 @@
-<section>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Climbing Everest</title>
+
 <link rel="stylesheet" href="css/styles.css">
+<script defer src="js/script.js"></script>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="small-header">
+<h1>Climbing Mount Everest</h1>
+<p>The Ultimate Human Challenge</p>
+</header>
+
+<!-- NAV -->
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="history.html">History</a></li>
+<li><a href="facts.html">Facts</a></li>
+<li><a href="climbing.html">Climbing</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="audio.html">Audio</a></li>
+</ul>
+</nav>
+
+<main>
+
+<!-- INTRO -->
+<section class="fade-in">
+
 <h2>The Challenge of Climbing Everest</h2>
 
 <p>
-Climbing Mount Everest is one of the most difficult and dangerous challenges in the world.
-Climbers must endure extreme cold, strong winds, and very low oxygen levels.
+Climbing Mount Everest is considered one of the most difficult and dangerous challenges on Earth. 
+At extreme altitudes, the human body struggles to survive due to the lack of oxygen, freezing temperatures, 
+and unpredictable weather conditions. Every year, climbers from around the world attempt to reach the summit, 
+but only a percentage succeed.
 </p>
 
 <p>
-The “Death Zone” begins at around 8,000 meters, where the human body cannot survive for long periods.
-At this altitude, even simple movements require great effort.
+The journey requires months of preparation, physical training, and mental strength. Climbers must carry heavy 
+equipment, follow strict schedules, and rely on teamwork to navigate the dangerous terrain. Even with modern 
+technology, Everest remains a powerful and unpredictable force of nature.
 </p>
+
+<img src="images/everest2.jpg" alt="Climbing Everest">
+
+</section>
+
+<!-- DANGERS -->
+<section class="fade-in">
 
 <h2>Main Dangers</h2>
 
@@ -22,28 +69,89 @@ At this altitude, even simple movements require great effort.
 </ul>
 
 <p>
-Altitude sickness can cause confusion, weakness, and even death if not treated properly.
-Many climbers also suffer from frostbite due to extreme cold.
+One of the biggest threats is altitude sickness, which occurs when the body cannot adjust to low oxygen levels. 
+Symptoms include dizziness, confusion, and severe headaches. If untreated, it can become fatal.
 </p>
+
+<p>
+Frostbite is another major danger, caused by exposure to extremely low temperatures. Climbers must wear 
+specialized clothing to protect their bodies from freezing conditions that can permanently damage skin and tissue.
+</p>
+
+</section>
+
+<!-- DEATH ZONE -->
+<section class="fade-in">
+
+<h2>The Death Zone</h2>
+
+<p>
+Above 8,000 meters lies the “Death Zone,” where oxygen levels are insufficient to sustain human life for long 
+periods. In this region, the body begins to deteriorate rapidly, and climbers must rely on supplemental oxygen 
+to survive.
+</p>
+
+<p>
+Time becomes critical in the Death Zone. Climbers must reach the summit and descend quickly, as prolonged 
+exposure increases the risk of serious health complications. This makes the final part of the climb the most 
+dangerous and demanding.
+</p>
+
+</section>
+
+<!-- EXPERIENCE -->
+<section class="fade-in">
 
 <h2>The Experience</h2>
 
 <p>
-Despite the dangers, climbers describe Everest as one of the most beautiful places on Earth.
-Standing at the summit allows you to see the curvature of the planet and endless mountain ranges.
+Despite the risks, reaching the summit of Everest is a life-changing experience. Climbers describe the view 
+as breathtaking, with endless mountain ranges stretching beyond the horizon. Standing at the highest point 
+on Earth represents the ultimate achievement for many adventurers.
 </p>
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="history.html">History</a></li>
-<li><a href="facts.html">Facts</a></li>
-<li><a href="climbing.html">Climbing</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-</ul>
-</nav>
+
+<p>
+However, the journey is not only about reaching the top. It is also about perseverance, teamwork, and pushing 
+the limits of human capability. Everest continues to inspire people to explore and challenge themselves.
+</p>
+
+</section>
+
+<!-- FACT BUTTON -->
+<section class="fade-in">
+
+<h2>Did You Know?</h2>
+
+<button onclick="showFact()">Click for a Fact</button>
+<p id="fact"></p>
+
+</section>
+
+<!-- FIGURE (REQUIREMENT) -->
+<section class="fade-in">
+
 <figure>
-<img src="images/everest2.jpg" alt="Climbing Everest">
-<figcaption>Climbers navigating dangerous routes</figcaption>
+<img src="images/everest3.jpg" alt="Everest expedition">
+<figcaption>Climbers navigating one of the most dangerous routes</figcaption>
 </figure>
 
 </section>
+
+</main>
+
+<!-- BOTÓN SUBIR -->
+<button onclick="goTop()" id="topBtn" style="display:none; position:fixed; bottom:20px; right:20px;">
+⬆ Top
+</button>
+
+<!-- FOOTER -->
+<footer>
+<p>Everest Project | 2026</p>
+</footer>
+
+<noscript>
+JavaScript is required for full experience.
+</noscript>
+
+</body>
+</html>
