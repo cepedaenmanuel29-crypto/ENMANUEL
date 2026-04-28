@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mount Everest | The Roof of the World</title>
+<title>Mount Everest | Home</title>
 
 <link rel="stylesheet" href="css/styles.css">
-
-<!-- CONECTA TU JS -->
 <script defer src="js/script.js"></script>
-
 </head>
 
-<body>
+<body class="home-body">
 
-<!-- HERO SECTION -->
+<!-- HERO CON FONDO -->
 <header class="hero">
-<div class="hero-text">
-<h1>Mount Everest</h1>
-<p>The Highest Point on Earth</p>
 
-<a href="#explore" class="btn">Explore the Journey</a>
+<div class="hero-overlay">
+
+<h1>Mount Everest</h1>
+<p>The Roof of the World</p>
+
+<a href="#explore" class="btn">Explore</a>
+
 </div>
+
 </header>
 
-<!-- NAVIGATION -->
+<!-- NAV -->
 <nav>
 <ul>
 <li><a href="index.html">Home</a></li>
@@ -34,18 +35,31 @@
 <li><a href="facts.html">Facts</a></li>
 <li><a href="climbing.html">Climbing</a></li>
 <li><a href="gallery.html">Gallery</a></li>
-<li><a href="audio.html">Audio</a></li>
 </ul>
 </nav>
 
-<!-- AUDIO SECTION -->
+<main id="explore">
+
+<!-- INTRO -->
 <section class="fade-in">
+
+<h2>Welcome to Mount Everest</h2>
+
+<p>
+Mount Everest is the highest mountain on Earth, standing at 8,848.86 meters.
+It represents the ultimate challenge of human endurance and exploration.
+</p>
+
+</section>
+
+<!-- AUDIO DENTRO DEL HOME (NO PAGINA APARTE) -->
+<section class="fade-in">
+
 <h2>Everest Atmosphere</h2>
 
-<p>Listen to the wind and environment of Mount Everest.</p>
+<p>Experience the sound of extreme wind and altitude.</p>
 
-<!-- BOTÓN CONTROLADO POR JS -->
-<button onclick="playAudio()">Play / Pause Sound</button>
+<button onclick="playAudio()">Play Sound</button>
 
 <audio id="audio">
 <source src="audio/everest.mp3" type="audio/mpeg">
@@ -53,121 +67,24 @@
 
 </section>
 
-<!-- MAIN CONTENT -->
-<main id="explore">
+<!-- VIDEO -->
+<section class="fade-in">
 
-<!-- INTRO -->
-<section class="card fade-in">
+<h2>Everest Panorama</h2>
 
-<h2>Discover Mount Everest</h2>
-
-<p>
-Mount Everest rises 8,848.86 meters above sea level, making it the tallest mountain on Earth.
-It is part of the Himalayas and sits between Nepal and Tibet. Formed millions of years ago by
-tectonic plate collision, Everest continues to grow slowly every year.
-</p>
-
-<p>
-Locally known as <strong>Sagarmatha</strong> and <strong>Chomolungma</strong>, the mountain holds deep
-cultural and spiritual meaning for the people of the region.
-</p>
-
-<img src="images/everest1.jpg" alt="Mount Everest panoramic view">
-
-</section>
-
-<!-- FACT BUTTON -->
-<section class="card fade-in">
-
-<h2>Interesting Fact</h2>
-
-<button onclick="showFact()">Click for a Fact</button>
-<p id="fact"></p>
-
-</section>
-
-<!-- WHY IMPORTANT -->
-<section class="card fade-in">
-
-<h2>Why Everest Matters</h2>
-
-<p>
-Everest is not just a mountain—it represents human ambition, exploration, and survival.
-Every year, climbers attempt to reach its summit despite extreme danger.
-</p>
-
-<ul>
-<li>Highest mountain on Earth</li>
-<li>Extreme weather conditions</li>
-<li>Symbol of human endurance</li>
-<li>Located in the Himalayas</li>
-</ul>
-
-</section>
-
-<!-- DANGER -->
-<section class="card danger fade-in">
-
-<h2>The Extreme Environment</h2>
-
-<p>
-Above 8,000 meters lies the “Death Zone,” where oxygen levels are dangerously low.
-Temperatures can drop below -60°C.
-</p>
-
-</section>
-
-<!-- FORM (REQUIREMENT) -->
-<section class="card fade-in">
-
-<h2>Join the Experience</h2>
-
-<form onsubmit="return validateForm()">
-
-<label>Name:</label>
-<input type="text" id="name" required>
-
-<label>Email:</label>
-<input type="email" id="email" required>
-
-<button type="submit">Submit</button>
-
-</form>
-
-</section>
-
-<!-- LINKS -->
-<section class="card links fade-in">
-
-<h2>Explore the Website</h2>
-
-<div class="grid-links">
-
-<a href="history.html">📜 History</a>
-<a href="facts.html">📊 Facts</a>
-<a href="climbing.html">🧗 Climbing</a>
-<a href="gallery.html">🖼️ Gallery</a>
-
-</div>
+<video controls class="video">
+<source src="video/everest.mp4" type="video/mp4">
+</video>
 
 </section>
 
 </main>
 
-<!-- BOTÓN SUBIR -->
-<button onclick="goTop()" id="topBtn" style="display:none; position:fixed; bottom:20px; right:20px;">
-⬆ Top
-</button>
-
-<!-- FOOTER -->
 <footer>
 <p>Everest Project | 2026</p>
 </footer>
 
-<!-- NOSCRIPT (REQUIRED) -->
-<noscript>
-JavaScript is required for full experience.
-</noscript>
+<noscript>JavaScript is required for full experience</noscript>
 
 </body>
 </html>
