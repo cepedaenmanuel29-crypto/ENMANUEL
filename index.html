@@ -5,30 +5,30 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mount Everest | Home</title>
+<title>Mount Everest | National Geographic Style</title>
 
 <link rel="stylesheet" href="css/styles.css">
 <script defer src="js/script.js"></script>
 </head>
 
-<body class="home-body">
+<body class="natgeo-body">
 
-<!-- HERO CON FONDO -->
-<header class="hero">
+<!-- HERO CINEMATIC -->
+<header class="hero-natgeo">
 
-<div class="hero-overlay">
+<div class="hero-content fade-in">
 
 <h1>Mount Everest</h1>
-<p>The Roof of the World</p>
+<p>The Last Frontier of Earth</p>
 
-<a href="#explore" class="btn">Explore</a>
+<a href="#explore" class="btn-natgeo">Explore Story</a>
 
 </div>
 
 </header>
 
-<!-- NAV -->
-<nav>
+<!-- NAV SIMPLE -->
+<nav class="nav-natgeo">
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="history.html">History</a></li>
@@ -40,26 +40,33 @@
 
 <main id="explore">
 
-<!-- INTRO -->
-<section class="fade-in">
+<!-- INTRO EDITORIAL -->
+<section class="section-natgeo fade-in">
 
-<h2>Welcome to Mount Everest</h2>
+<h2>The Highest Place on Earth</h2>
 
 <p>
-Mount Everest is the highest mountain on Earth, standing at 8,848.86 meters.
-It represents the ultimate challenge of human endurance and exploration.
+Rising above the clouds at 8,848.86 meters, Mount Everest stands as the highest point on Earth.
+Located in the Himalayas between Nepal and Tibet, it represents one of the most extreme environments ever explored by humans.
+</p>
+
+<p>
+For centuries, the mountain remained untouched and unknown to the outside world.
+Today, it is both a scientific landmark and a symbol of human ambition.
 </p>
 
 </section>
 
-<!-- AUDIO DENTRO DEL HOME (NO PAGINA APARTE) -->
-<section class="fade-in">
+<!-- AUDIO INTEGRADO -->
+<section class="section-natgeo fade-in">
 
-<h2>Everest Atmosphere</h2>
+<h2>Sound of the Himalayas</h2>
 
-<p>Experience the sound of extreme wind and altitude.</p>
+<p>
+High altitude winds and silence define the Everest experience.
+</p>
 
-<button onclick="playAudio()">Play Sound</button>
+<button onclick="playAudio()" class="btn-natgeo-small">Play Sound</button>
 
 <audio id="audio">
 <source src="audio/everest.mp3" type="audio/mpeg">
@@ -67,24 +74,58 @@ It represents the ultimate challenge of human endurance and exploration.
 
 </section>
 
-<!-- VIDEO -->
-<section class="fade-in">
+<!-- VIDEO PROTAGONISTA -->
+<section class="video-section-natgeo fade-in">
 
-<h2>Everest Panorama</h2>
+<h2>Everest From Above</h2>
 
-<video controls class="video">
+<p>
+Aerial footage reveals the scale, isolation, and beauty of the Himalayan range.
+</p>
+
+<video controls class="video-natgeo">
 <source src="video/everest.mp4" type="video/mp4">
 </video>
 
 </section>
 
+<!-- STORY SECTION -->
+<section class="section-natgeo fade-in">
+
+<h2>A Mountain That Keeps Growing</h2>
+
+<p>
+Everest is not static. Due to the collision between the Indian and Eurasian tectonic plates,
+the mountain continues to rise a few millimeters every year.
+</p>
+
+<p>
+This constant geological movement makes Everest a living structure, constantly reshaping itself over time.
+</p>
+
+</section>
+
+<!-- FINAL IMPACT -->
+<section class="section-natgeo fade-in">
+
+<h2>More Than a Mountain</h2>
+
+<p>
+For climbers, Everest is not just a destination — it is a test of endurance, survival, and determination.
+Every ascent tells a story of risk, preparation, and respect for nature’s power.
+</p>
+
+<a href="history.html" class="btn-natgeo">Start the Journey</a>
+
+</section>
+
 </main>
 
-<footer>
+<footer class="footer-natgeo">
 <p>Everest Project | 2026</p>
 </footer>
 
-<noscript>JavaScript is required for full experience</noscript>
+<noscript>JavaScript required for full experience</noscript>
 
 </body>
 </html>
