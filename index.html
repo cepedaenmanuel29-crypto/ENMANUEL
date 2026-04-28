@@ -1,38 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Mount Everest | The Roof of the World</title>
 
 <link rel="stylesheet" href="css/styles.css">
+
+<!-- CONECTA TU JS -->
+<script defer src="js/script.js"></script>
+
 </head>
 
 <body>
+
 <!-- HERO SECTION -->
 <header class="hero">
-
 <div class="hero-text">
 <h1>Mount Everest</h1>
 <p>The Highest Point on Earth</p>
 
 <a href="#explore" class="btn">Explore the Journey</a>
-
 </div>
-
 </header>
-<section>
-<h2>Everest Atmosphere</h2>
 
-<p>Listen to the wind and environment of Mount Everest.</p>
-
-<audio controls loop>
-  <source src="/audio/everest.mp3">
-</audio>
-
-</section>
-  <!-- NAVIGATION -->
+<!-- NAVIGATION -->
 <nav>
 <ul>
 <li><a href="index.html">Home</a></li>
@@ -40,12 +34,31 @@
 <li><a href="facts.html">Facts</a></li>
 <li><a href="climbing.html">Climbing</a></li>
 <li><a href="gallery.html">Gallery</a></li>
+<li><a href="audio.html">Audio</a></li>
 </ul>
 </nav>
+
+<!-- AUDIO SECTION -->
+<section class="fade-in">
+<h2>Everest Atmosphere</h2>
+
+<p>Listen to the wind and environment of Mount Everest.</p>
+
+<!-- BOTÓN CONTROLADO POR JS -->
+<button onclick="playAudio()">Play / Pause Sound</button>
+
+<audio id="audio">
+<source src="audio/everest.mp3" type="audio/mpeg">
+</audio>
+
+</section>
+
 <!-- MAIN CONTENT -->
 <main id="explore">
+
 <!-- INTRO -->
-<section class="card">
+<section class="card fade-in">
+
 <h2>Discover Mount Everest</h2>
 
 <p>
@@ -63,15 +76,24 @@ cultural and spiritual meaning for the people of the region.
 
 </section>
 
+<!-- FACT BUTTON -->
+<section class="card fade-in">
+
+<h2>Interesting Fact</h2>
+
+<button onclick="showFact()">Click for a Fact</button>
+<p id="fact"></p>
+
+</section>
+
 <!-- WHY IMPORTANT -->
-<section class="card">
+<section class="card fade-in">
 
 <h2>Why Everest Matters</h2>
 
 <p>
 Everest is not just a mountain—it represents human ambition, exploration, and survival.
-Every year, climbers attempt to reach its summit despite extreme danger, unpredictable weather,
-and the effects of altitude sickness.
+Every year, climbers attempt to reach its summit despite extreme danger.
 </p>
 
 <ul>
@@ -83,34 +105,48 @@ and the effects of altitude sickness.
 
 </section>
 
-<!-- DANGER SECTION -->
-<section class="card danger">
+<!-- DANGER -->
+<section class="card danger fade-in">
 
 <h2>The Extreme Environment</h2>
 
 <p>
-Above 8,000 meters lies the “Death Zone,” where oxygen levels are so low that the human body
-begins to shut down. Temperatures can drop below -60°C, and winds can reach extreme speeds.
-</p>
-
-<p>
-Climbers must use oxygen tanks, special gear, and carefully planned routes to survive.
-Even small mistakes can become life-threatening.
+Above 8,000 meters lies the “Death Zone,” where oxygen levels are dangerously low.
+Temperatures can drop below -60°C.
 </p>
 
 </section>
 
-<!-- QUICK LINKS -->
-<section class="card links">
+<!-- FORM (REQUIREMENT) -->
+<section class="card fade-in">
+
+<h2>Join the Experience</h2>
+
+<form onsubmit="return validateForm()">
+
+<label>Name:</label>
+<input type="text" id="name" required>
+
+<label>Email:</label>
+<input type="email" id="email" required>
+
+<button type="submit">Submit</button>
+
+</form>
+
+</section>
+
+<!-- LINKS -->
+<section class="card links fade-in">
 
 <h2>Explore the Website</h2>
 
 <div class="grid-links">
 
-<a href="history.html">📜 History of Everest</a>
-<a href="facts.html">📊 Extreme Facts</a>
-<a href="climbing.html">🧗 Climbing Guide</a>
-<a href="gallery.html">🖼️ Photo Gallery</a>
+<a href="history.html">📜 History</a>
+<a href="facts.html">📊 Facts</a>
+<a href="climbing.html">🧗 Climbing</a>
+<a href="gallery.html">🖼️ Gallery</a>
 
 </div>
 
@@ -118,10 +154,20 @@ Even small mistakes can become life-threatening.
 
 </main>
 
+<!-- BOTÓN SUBIR -->
+<button onclick="goTop()" id="topBtn" style="display:none; position:fixed; bottom:20px; right:20px;">
+⬆ Top
+</button>
+
 <!-- FOOTER -->
 <footer>
 <p>Everest Project | 2026</p>
 </footer>
+
+<!-- NOSCRIPT (REQUIRED) -->
+<noscript>
+JavaScript is required for full experience.
+</noscript>
 
 </body>
 </html>
