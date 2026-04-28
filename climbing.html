@@ -9,13 +9,11 @@
 
 <link rel="stylesheet" href="css/styles.css">
 <script defer src="js/script.js"></script>
-
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header class="small-header">
+<header class="small-header fade-in">
 <h1>Climbing Mount Everest</h1>
 <p>The Ultimate Human Challenge</p>
 </header>
@@ -28,7 +26,6 @@
 <li><a href="facts.html">Facts</a></li>
 <li><a href="climbing.html">Climbing</a></li>
 <li><a href="gallery.html">Gallery</a></li>
-
 </ul>
 </nav>
 
@@ -37,19 +34,17 @@
 <!-- INTRO -->
 <section class="fade-in">
 
-<h2>The Challenge of Climbing Everest</h2>
+<h2>The Human Challenge</h2>
 
 <p>
-Climbing Mount Everest is considered one of the most difficult and dangerous challenges on Earth. 
-At extreme altitudes, the human body struggles to survive due to the lack of oxygen, freezing temperatures, 
-and unpredictable weather conditions. Every year, climbers from around the world attempt to reach the summit, 
-but only a percentage succeed.
+Climbing Mount Everest is one of the most extreme physical and mental challenges in the world.
+At 8,848.86 meters above sea level, the human body begins to struggle with every step due to lack of oxygen,
+freezing temperatures, and unpredictable weather patterns.
 </p>
 
 <p>
-The journey requires months of preparation, physical training, and mental strength. Climbers must carry heavy 
-equipment, follow strict schedules, and rely on teamwork to navigate the dangerous terrain. Even with modern 
-technology, Everest remains a powerful and unpredictable force of nature.
+Every expedition requires months of preparation, including physical training, equipment testing, and mental conditioning.
+Even experienced climbers respect the mountain as a powerful force that cannot be controlled.
 </p>
 
 <img src="images/everest2.jpg" alt="Climbing Everest">
@@ -59,23 +54,27 @@ technology, Everest remains a powerful and unpredictable force of nature.
 <!-- DANGERS -->
 <section class="fade-in">
 
-<h2>Main Dangers</h2>
+<h2>Natural Dangers</h2>
+
+<p>
+Everest presents multiple life-threatening risks that climbers must face throughout their journey.
+</p>
 
 <ul>
 <li>Avalanches</li>
 <li>Frostbite</li>
 <li>Altitude sickness</li>
-<li>Crevasses (deep cracks in ice)</li>
+<li>Hidden crevasses</li>
 </ul>
 
 <p>
-One of the biggest threats is altitude sickness, which occurs when the body cannot adjust to low oxygen levels. 
-Symptoms include dizziness, confusion, and severe headaches. If untreated, it can become fatal.
+Avalanches can occur without warning, burying entire sections of the mountain in seconds.
+Frostbite can permanently damage skin due to extreme cold temperatures.
 </p>
 
 <p>
-Frostbite is another major danger, caused by exposure to extremely low temperatures. Climbers must wear 
-specialized clothing to protect their bodies from freezing conditions that can permanently damage skin and tissue.
+Altitude sickness is one of the most dangerous conditions, caused by the lack of oxygen at high elevation,
+leading to confusion, fatigue, and in severe cases, death.
 </p>
 
 </section>
@@ -86,15 +85,17 @@ specialized clothing to protect their bodies from freezing conditions that can p
 <h2>The Death Zone</h2>
 
 <p>
-Above 8,000 meters lies the “Death Zone,” where oxygen levels are insufficient to sustain human life for long 
-periods. In this region, the body begins to deteriorate rapidly, and climbers must rely on supplemental oxygen 
-to survive.
+Above 8,000 meters lies what climbers call the “Death Zone.”
+In this area, oxygen levels are so low that the human body begins to shut down.
 </p>
 
 <p>
-Time becomes critical in the Death Zone. Climbers must reach the summit and descend quickly, as prolonged 
-exposure increases the risk of serious health complications. This makes the final part of the climb the most 
-dangerous and demanding.
+Every movement becomes extremely exhausting, and decision-making becomes slower due to lack of oxygen.
+Because of this, climbers must spend as little time as possible in this region.
+</p>
+
+<p>
+Most accidents on Everest occur in the Death Zone, making it the most dangerous part of the entire mountain.
 </p>
 
 </section>
@@ -102,17 +103,16 @@ dangerous and demanding.
 <!-- EXPERIENCE -->
 <section class="fade-in">
 
-<h2>The Experience</h2>
+<h2>The Climbing Experience</h2>
 
 <p>
-Despite the risks, reaching the summit of Everest is a life-changing experience. Climbers describe the view 
-as breathtaking, with endless mountain ranges stretching beyond the horizon. Standing at the highest point 
-on Earth represents the ultimate achievement for many adventurers.
+Despite the danger, reaching the summit of Everest is considered one of the greatest achievements in human exploration.
+From the top, climbers can see the curvature of the Earth and endless mountain ranges below the clouds.
 </p>
 
 <p>
-However, the journey is not only about reaching the top. It is also about perseverance, teamwork, and pushing 
-the limits of human capability. Everest continues to inspire people to explore and challenge themselves.
+However, the climb is not just about reaching the summit — it is about survival, teamwork, endurance, and mental strength.
+Every climber who attempts Everest faces both physical and psychological challenges.
 </p>
 
 </section>
@@ -122,29 +122,32 @@ the limits of human capability. Everest continues to inspire people to explore a
 
 <h2>Did You Know?</h2>
 
-<button onclick="showFact()">Click for a Fact</button>
+<button onclick="showFact()" class="btn">Click for a Fact</button>
 <p id="fact"></p>
 
 </section>
 
-<!-- FIGURE (REQUIREMENT) -->
+<!-- IMAGE STORY -->
 <section class="fade-in">
 
 <figure>
 <img src="images/everest3.jpg" alt="Everest expedition">
-<figcaption>Climbers navigating one of the most dangerous routes</figcaption>
+
+<figcaption>
+Climbers navigating extreme ice walls during their ascent to the summit of Mount Everest.
+</figcaption>
+
 </figure>
 
 </section>
 
 </main>
 
-<!-- BOTÓN SUBIR -->
+<!-- BACK TO TOP -->
 <button onclick="goTop()" id="topBtn" style="display:none; position:fixed; bottom:20px; right:20px;">
 ⬆ Top
 </button>
 
-<!-- FOOTER -->
 <footer>
 <p>Everest Project | 2026</p>
 </footer>
