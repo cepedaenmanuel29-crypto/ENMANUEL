@@ -36,15 +36,17 @@
 <h2>Mountain Wind Audio</h2>
 
 <p>
-This audio simulates the strong winds and extreme environment found near the summit of Mount Everest.  
-The sound helps recreate the feeling of being at high altitude where nature dominates everything.
+This audio recreates the extreme wind conditions found near the summit of Mount Everest.
+It helps simulate the feeling of being in one of the harshest environments on Earth,
+where oxygen is low and wind speeds are extremely high.
 </p>
 
-<button onclick="playAudio()">Play / Pause Sound</button>
+<button onclick="playAudio()">▶ Play / Pause Sound</button>
 
-<audio id="audio">
+<!-- AUDIO FIXED -->
+<audio id="audio" controls>
 <source src="audio/everest.mp3" type="audio/mpeg">
-Your browser does not support audio.
+Your browser does not support the audio element.
 </audio>
 
 </section>
@@ -55,7 +57,9 @@ Your browser does not support audio.
 <p>Everest Project | 2026</p>
 </footer>
 
-<noscript>JavaScript is required for audio controls.</noscript>
+<noscript>
+JavaScript is required for audio controls to work properly.
+</noscript>
 
 </body>
 </html>
