@@ -1,45 +1,52 @@
+
 /* =========================
    AUDIO CONTROL
 ========================= */
-function playAudio(){
+function playAudio() {
 let audio = document.getElementById("audio");
 
-if(audio.paused){
+if (audio.paused) {
 audio.play();
-}else{
+} else {
 audio.pause();
 }
 }
 
 /* =========================
-   SCROLL SUAVE
+   SMOOTH SCROLL (FIXED)
 ========================= */
-function scrollToSection(){
-document.getElementById("mainContent").scrollIntoView({
-behavior:"smooth"
+function scrollToSection() {
+window.scrollTo({
+top: document.getElementById("explore")?.offsetTop || 0,
+behavior: "smooth"
 });
 }
 
 /* =========================
-   ANIMACIÓN SCROLL (DOM)
+   SCROLL ANIMATION (IMPROVED)
 ========================= */
 const elements = document.querySelectorAll(".fade-in");
 
-window.addEventListener("scroll", () => {
+function revealOnScroll() {
 elements.forEach(el => {
 let position = el.getBoundingClientRect().top;
 let screenHeight = window.innerHeight;
 
-if(position < screenHeight - 100){
+if (position < screenHeight - 100) {
 el.classList.add("show");
 }
 });
-});
+}
+
+/* run once on load */
+window.addEventListener("load", revealOnScroll);
+window.addEventListener("scroll", revealOnScroll);
 
 /* =========================
-   FACTOS ALEATORIOS (ARRAY + LOOP)
+   FACTS (ARRAY + RANDOM + LOOP)
 ========================= */
-function showFact(){
+function showFact() {
+
 let facts = [
 "Mount Everest grows about 4mm every year.",
 "Temperatures can drop below -60°C.",
@@ -48,8 +55,8 @@ let facts = [
 "Everest was first climbed in 1953."
 ];
 
-// loop interno (requisito)
-for(let i = 0; i < facts.length; i++){
+// loop requerido (console)
+for (let i = 0; i < facts.length; i++) {
 console.log(facts[i]);
 }
 
@@ -58,18 +65,19 @@ document.getElementById("fact").innerText = facts[random];
 }
 
 /* =========================
-   FORM VALIDATION (IF)
+   FORM VALIDATION
 ========================= */
-function validateForm(){
+function validateForm() {
+
 let name = document.getElementById("name").value;
 let email = document.getElementById("email").value;
 
-if(name.length < 3){
+if (name.length < 3) {
 alert("Name must be at least 3 characters");
 return false;
 }
 
-if(!email.includes("@")){
+if (!email.includes("@")) {
 alert("Enter a valid email");
 return false;
 }
@@ -79,21 +87,23 @@ return true;
 }
 
 /* =========================
-   BOTÓN VOLVER ARRIBA
+   BACK TO TOP BUTTON (FIXED)
 ========================= */
-window.onscroll = function(){
+window.addEventListener("scroll", function () {
 let btn = document.getElementById("topBtn");
 
-if(document.documentElement.scrollTop > 300){
+if (!btn) return;
+
+if (document.documentElement.scrollTop > 300) {
 btn.style.display = "block";
-}else{
+} else {
 btn.style.display = "none";
 }
-};
+});
 
-function goTop(){
+function goTop() {
 window.scrollTo({
-top:0,
-behavior:"smooth"
+top: 0,
+behavior: "smooth"
 });
 }
