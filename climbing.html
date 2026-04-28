@@ -11,15 +11,22 @@
 <script defer src="js/script.js"></script>
 </head>
 
-<body>
+<body class="natgeo-body">
 
-<header class="small-header fade-in">
+<!-- HEADER STYLE NATGEO -->
+<header class="hero-natgeo" style="height:60vh;">
+
+<div class="hero-content fade-in">
+
 <h1>Climbing Mount Everest</h1>
 <p>The Ultimate Human Challenge</p>
+
+</div>
+
 </header>
 
-<!-- NAV -->
-<nav>
+<!-- NAV NATGEO -->
+<nav class="nav-natgeo">
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="history.html">History</a></li>
@@ -32,7 +39,7 @@
 <main>
 
 <!-- INTRO -->
-<section class="fade-in">
+<section class="section-natgeo fade-in">
 
 <h2>The Human Challenge</h2>
 
@@ -47,12 +54,12 @@ Every expedition requires months of preparation, including physical training, eq
 Even experienced climbers respect the mountain as a powerful force that cannot be controlled.
 </p>
 
-<img src="images/everest2.jpg" alt="Climbing Everest">
+<img src="images/everest2.jpg" class="video-natgeo" alt="Climbing Everest">
 
 </section>
 
 <!-- DANGERS -->
-<section class="fade-in">
+<section class="section-natgeo fade-in">
 
 <h2>Natural Dangers</h2>
 
@@ -80,7 +87,7 @@ leading to confusion, fatigue, and in severe cases, death.
 </section>
 
 <!-- DEATH ZONE -->
-<section class="fade-in">
+<section class="section-natgeo fade-in">
 
 <h2>The Death Zone</h2>
 
@@ -101,7 +108,7 @@ Most accidents on Everest occur in the Death Zone, making it the most dangerous 
 </section>
 
 <!-- EXPERIENCE -->
-<section class="fade-in">
+<section class="section-natgeo fade-in">
 
 <h2>The Climbing Experience</h2>
 
@@ -118,23 +125,23 @@ Every climber who attempts Everest faces both physical and psychological challen
 </section>
 
 <!-- FACT BUTTON -->
-<section class="fade-in">
+<section class="section-natgeo fade-in">
 
 <h2>Did You Know?</h2>
 
-<button onclick="showFact()" class="btn">Click for a Fact</button>
+<button onclick="showFact()" class="btn-natgeo-small">Click for a Fact</button>
 <p id="fact"></p>
 
 </section>
 
-<!-- IMAGE STORY -->
-<section class="fade-in">
+<!-- IMAGE -->
+<section class="section-natgeo fade-in">
 
 <figure>
-<img src="images/everest3.jpg" alt="Everest expedition">
+<img src="images/everest3.jpg" class="video-natgeo" alt="Everest expedition">
 
 <figcaption>
-Climbers navigating extreme ice walls during their ascent to the summit of Mount Everest.
+Climbers navigating extreme ice walls during their ascent.
 </figcaption>
 
 </figure>
@@ -143,12 +150,7 @@ Climbers navigating extreme ice walls during their ascent to the summit of Mount
 
 </main>
 
-<!-- BACK TO TOP -->
-<button onclick="goTop()" id="topBtn" style="display:none; position:fixed; bottom:20px; right:20px;">
-⬆ Top
-</button>
-
-<footer>
+<footer class="footer-natgeo">
 <p>Everest Project | 2026</p>
 </footer>
 
