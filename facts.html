@@ -1,36 +1,96 @@
-<section>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Everest Facts</title>
+
 <link rel="stylesheet" href="css/styles.css">
+<script defer src="js/script.js"></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="small-header">
+<h1>Extreme Facts of Mount Everest</h1>
+<p>Scientific, environmental, and geological data</p>
+</header>
+
+<!-- NAV -->
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="history.html">History</a></li>
+<li><a href="facts.html">Facts</a></li>
+<li><a href="climbing.html">Climbing</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="audio.html">Audio</a></li>
+</ul>
+</nav>
+
+<main>
+
+<!-- SECTION 1 -->
+<section class="fade-in">
+
 <h2>Extreme Conditions</h2>
 
 <p>
-Mount Everest is one of the most extreme environments on Earth. Temperatures can drop below -60°C, and winds can exceed 200 miles per hour. :contentReference[oaicite:6]{index=6}
+Mount Everest is one of the most extreme environments on Earth. Temperatures can drop below -60°C, 
+and wind speeds can become dangerously high, creating conditions that are extremely difficult for human survival.
 </p>
 
 <p>
-At high altitudes, oxygen levels are extremely low—only about one-third of what is available at sea level.
-This makes breathing difficult and can lead to altitude sickness.
+At high altitude, oxygen levels are extremely low—only about one-third of what is available at sea level. 
+Because of this, climbers must use supplemental oxygen to survive in the upper regions of the mountain.
 </p>
+
+</section>
+
+<!-- SECTION 2 -->
+<section class="fade-in">
 
 <h2>Geological Facts</h2>
 
 <p>
-Mount Everest continues to grow slightly every year due to tectonic activity caused by the collision of the Indian and Eurasian plates. :contentReference[oaicite:7]{index=7}
+Mount Everest continues to grow slowly every year due to tectonic activity caused by the collision of the 
+Indian and Eurasian plates. This movement forces the Himalayas upward over time.
 </p>
 
 <p>
-The mountain is estimated to be between 50 and 60 million years old, making it relatively young in geological terms.
+Scientifically, Everest is estimated to be around 50 to 60 million years old, making it relatively young 
+in geological terms compared to many other mountain formations on Earth.
 </p>
+
+</section>
+
+<!-- SECTION 3 -->
+<section class="fade-in">
 
 <h2>Wildlife and Environment</h2>
 
 <p>
-Lower regions of Everest are home to animals such as snow leopards, red pandas, and Himalayan yaks.
-However, above 20,000 feet, almost no life can survive due to the extreme conditions. :contentReference[oaicite:8]{index=8}
+Lower regions of Everest are home to unique wildlife such as snow leopards, red pandas, and Himalayan yaks. 
+These animals are adapted to cold environments and high altitudes.
 </p>
 
-<h2>Table of Key Data</h2>
+<p>
+However, above 6,000 meters, almost no life can survive due to extreme cold, lack of oxygen, and harsh weather 
+conditions. This area is considered biologically uninhabitable.
+</p>
+
+</section>
+
+<!-- SECTION 4 TABLE -->
+<section class="fade-in">
+
+<h2>Key Information</h2>
 
 <table>
+
 <thead>
 <tr>
 <th>Category</th>
@@ -43,33 +103,62 @@ However, above 20,000 feet, almost no life can survive due to the extreme condit
 <td>Height</td>
 <td>8,848.86 meters</td>
 </tr>
+
 <tr>
-<td>First Climb</td>
-<td>1953</td>
+<td>First Successful Climb</td>
+<td>1953 (Hillary & Norgay)</td>
 </tr>
+
 <tr>
 <td>Location</td>
-<td>Nepal/Tibet</td>
+<td>Nepal / Tibet (Himalayas)</td>
 </tr>
+
+<tr>
+<td>Death Zone</td>
+<td>Above 8,000 meters</td>
+</tr>
+
 <tr>
 <td>Temperature</td>
-<td>Below -60°C</td>
+<td>Can drop below -60°C</td>
 </tr>
+
 </tbody>
 
 </table>
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="history.html">History</a></li>
-<li><a href="facts.html">Facts</a></li>
-<li><a href="climbing.html">Climbing</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-</ul>
-</nav>
+
+</section>
+
+<!-- IMAGE -->
+<section class="fade-in">
+
 <figure>
-<img src="images/everest4.jpg" alt="Everest glacier">
-<figcaption>Glaciers and ice formations on Everest</figcaption>
+<img src="images/everest4.jpg" alt="Everest glaciers and ice formations">
+
+<figcaption>
+Glaciers and ice formations of Mount Everest showing the extreme icy environment of the mountain.
+</figcaption>
+
 </figure>
 
 </section>
+
+</main>
+
+<!-- BACK TO TOP -->
+<button onclick="goTop()" id="topBtn" style="display:none; position:fixed; bottom:20px; right:20px;">
+⬆ Top
+</button>
+
+<!-- FOOTER -->
+<footer>
+<p>Everest Project | 2026</p>
+</footer>
+
+<noscript>
+JavaScript is required for full functionality of this website.
+</noscript>
+
+</body>
+</html>
