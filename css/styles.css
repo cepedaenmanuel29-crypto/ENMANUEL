@@ -1,13 +1,18 @@
 
-/* BASE LIMPIA */
+/* =========================
+   BASE CINEMATOGRÁFICA
+========================= */
 .natgeo-body {
 margin: 0;
 font-family: "Arial", sans-serif;
-background: #0b0f14;
+background: #070a0f;
 color: #f5f5f5;
+overflow-x: hidden;
 }
 
-/* HERO CINEMÁTICO */
+/* =========================
+   HERO CINEMÁTICO MEJORADO
+========================= */
 .hero-natgeo {
 height: 100vh;
 background: url("../images/everest1.jpg") center/cover no-repeat;
@@ -15,94 +20,141 @@ display: flex;
 align-items: center;
 justify-content: center;
 position: relative;
+overflow: hidden;
 }
 
+/* overlay más profesional (profundidad) */
 .hero-natgeo::after {
 content: "";
 position: absolute;
-width: 100%;
-height: 100%;
-background: rgba(0,0,0,0.6);
+inset: 0;
+background: radial-gradient(circle at center, rgba(0,0,0,0.3), rgba(0,0,0,0.85));
 }
 
+/* ligera capa de luz cinematográfica */
+.hero-natgeo::before {
+content: "";
+position: absolute;
+inset: 0;
+background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
+}
+
+/* =========================
+   TEXTO HERO
+========================= */
 .hero-content {
 position: relative;
 text-align: center;
 z-index: 2;
+animation: fadeUp 1.5s ease;
 }
 
 .hero-content h1 {
-font-size: 70px;
+font-size: 80px;
 margin: 0;
-letter-spacing: 2px;
+letter-spacing: 3px;
+text-shadow: 0 10px 40px rgba(0,0,0,0.8);
 }
 
 .hero-content p {
 font-size: 22px;
-opacity: 0.9;
+opacity: 0.85;
 }
 
-/* BOTÓN ESTILO DOC */
+/* =========================
+   BOTÓN ESTILO NATGEO
+========================= */
 .btn-natgeo {
 display: inline-block;
-margin-top: 20px;
-padding: 12px 25px;
+margin-top: 25px;
+padding: 12px 28px;
 background: #ffcc00;
 color: black;
 text-decoration: none;
 font-weight: bold;
-border-radius: 5px;
+border-radius: 4px;
+transition: 0.3s;
 }
 
-.btn-natgeo-small {
-padding: 8px 15px;
-background: #ffcc00;
-border: none;
-cursor: pointer;
+.btn-natgeo:hover {
+transform: scale(1.05);
+box-shadow: 0 10px 25px rgba(255, 204, 0, 0.3);
 }
 
-/* NAV LIMPIO */
+/* =========================
+   NAV LIMPIO PREMIUM
+========================= */
 .nav-natgeo ul {
 display: flex;
 justify-content: center;
-gap: 20px;
+gap: 25px;
 list-style: none;
-padding: 15px;
-background: #111;
+padding: 18px;
+background: rgba(10,10,10,0.95);
 margin: 0;
+position: sticky;
+top: 0;
+backdrop-filter: blur(10px);
+z-index: 100;
 }
 
 .nav-natgeo a {
 color: white;
 text-decoration: none;
+font-weight: bold;
+transition: 0.3s;
 }
 
 .nav-natgeo a:hover {
 color: #ffcc00;
 }
 
-/* SECCIONES EDITORIALES */
+/* =========================
+   SECCIONES EDITORIALES
+========================= */
 .section-natgeo {
-max-width: 900px;
-margin: 80px auto;
+max-width: 950px;
+margin: 100px auto;
 padding: 0 20px;
-line-height: 1.8;
+line-height: 1.9;
+font-size: 18px;
 }
 
-/* VIDEO GRANDE */
+/* títulos tipo documental */
+.section-natgeo h2 {
+font-size: 32px;
+margin-bottom: 20px;
+position: relative;
+}
+
+.section-natgeo h2::after {
+content: "";
+width: 80px;
+height: 3px;
+background: #ffcc00;
+display: block;
+margin-top: 10px;
+}
+
+/* =========================
+   VIDEO CINEMÁTICO PRO
+========================= */
 .video-natgeo {
 width: 100%;
-max-width: 1000px;
+max-width: 1100px;
 display: block;
-margin: 30px auto;
+margin: 40px auto;
 border-radius: 10px;
+box-shadow: 0 20px 60px rgba(0,0,0,0.6);
 }
 
-/* ANIMACIÓN SUAVE */
+/* =========================
+   ANIMACIÓN SCROLL
+========================= */
 .fade-in {
 opacity: 0;
-transform: translateY(40px);
-transition: 1s ease;
+transform: translateY(50px);
+transition: 1.2s ease;
 }
 
 .fade-in.show {
@@ -110,10 +162,27 @@ opacity: 1;
 transform: translateY(0);
 }
 
-/* FOOTER LIMPIO */
+/* =========================
+   FOOTER CINEMÁTICO
+========================= */
 .footer-natgeo {
 text-align: center;
-padding: 30px;
+padding: 40px;
 background: #000;
-margin-top: 50px;
+margin-top: 60px;
+opacity: 0.8;
+}
+
+/* =========================
+   ANIMACIÓN HERO
+========================= */
+@keyframes fadeUp {
+from {
+opacity: 0;
+transform: translateY(40px);
+}
+to {
+opacity: 1;
+transform: translateY(0);
+}
 }
