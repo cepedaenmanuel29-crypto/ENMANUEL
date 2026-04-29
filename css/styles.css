@@ -1,7 +1,5 @@
 
-/* =========================
-   BASE CINEMATOGRÁFICA
-========================= */
+
 .natgeo-body {
 margin: 0;
 font-family: "Arial", sans-serif;
@@ -10,9 +8,7 @@ color: #f5f5f5;
 overflow-x: hidden;
 }
 
-/* =========================
-   HERO CINEMÁTICO MEJORADO
-========================= */
+
 .hero-natgeo {
 height: 100vh;
 background: url("../images/everest1.jpg") center/cover no-repeat;
@@ -39,9 +35,7 @@ inset: 0;
 background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
 }
 
-/* =========================
-   TEXTO HERO
-========================= */
+
 .hero-content {
 position: relative;
 text-align: center;
@@ -61,9 +55,7 @@ font-size: 22px;
 opacity: 0.85;
 }
 
-/* =========================
-   BOTÓN ESTILO NATGEO
-========================= */
+
 .btn-natgeo {
 display: inline-block;
 margin-top: 25px;
@@ -81,9 +73,7 @@ transform: scale(1.05);
 box-shadow: 0 10px 25px rgba(255, 204, 0, 0.3);
 }
 
-/* =========================
-   NAV LIMPIO PREMIUM
-========================= */
+
 .nav-natgeo ul {
 display: flex;
 justify-content: center;
@@ -109,9 +99,7 @@ transition: 0.3s;
 color: #ffcc00;
 }
 
-/* =========================
-   SECCIONES EDITORIALES
-========================= */
+
 .section-natgeo {
 max-width: 950px;
 margin: 100px auto;
@@ -136,9 +124,7 @@ display: block;
 margin-top: 10px;
 }
 
-/* =========================
-   VIDEO CINEMÁTICO PRO
-========================= */
+
 .video-natgeo {
 width: 100%;
 max-width: 1100px;
@@ -148,9 +134,7 @@ border-radius: 10px;
 box-shadow: 0 20px 60px rgba(0,0,0,0.6);
 }
 
-/* =========================
-   ANIMACIÓN SCROLL
-========================= */
+
 .fade-in {
 opacity: 0;
 transform: translateY(50px);
@@ -162,9 +146,7 @@ opacity: 1;
 transform: translateY(0);
 }
 
-/* =========================
-   FOOTER CINEMÁTICO
-========================= */
+
 .footer-natgeo {
 text-align: center;
 padding: 40px;
@@ -173,9 +155,7 @@ margin-top: 60px;
 opacity: 0.8;
 }
 
-/* =========================
-   ANIMACIÓN HERO
-========================= */
+
 @keyframes fadeUp {
 from {
 opacity: 0;
