@@ -1,7 +1,4 @@
 
-/* =========================
-   AUDIO CONTROL
-========================= */
 function playAudio() {
 let audio = document.getElementById("audio");
 
@@ -12,9 +9,7 @@ audio.pause();
 }
 }
 
-/* =========================
-   SMOOTH SCROLL (FIXED)
-========================= */
+
 function scrollToSection() {
 window.scrollTo({
 top: document.getElementById("explore")?.offsetTop || 0,
@@ -22,9 +17,7 @@ behavior: "smooth"
 });
 }
 
-/* =========================
-   SCROLL ANIMATION (IMPROVED)
-========================= */
+
 const elements = document.querySelectorAll(".fade-in");
 
 function revealOnScroll() {
@@ -42,9 +35,7 @@ el.classList.add("show");
 window.addEventListener("load", revealOnScroll);
 window.addEventListener("scroll", revealOnScroll);
 
-/* =========================
-   FACTS (ARRAY + RANDOM + LOOP)
-========================= */
+
 function showFact() {
 
 let facts = [
@@ -64,9 +55,7 @@ let random = Math.floor(Math.random() * facts.length);
 document.getElementById("fact").innerText = facts[random];
 }
 
-/* =========================
-   FORM VALIDATION
-========================= */
+
 function validateForm() {
 
 let name = document.getElementById("name").value;
@@ -86,9 +75,6 @@ alert("Form submitted successfully!");
 return true;
 }
 
-/* =========================
-   BACK TO TOP BUTTON (FIXED)
-========================= */
 window.addEventListener("scroll", function () {
 let btn = document.getElementById("topBtn");
 
